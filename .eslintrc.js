@@ -7,6 +7,6 @@ module.exports = {
     rules: {
         'linebreak-style': ['error', 'unix'],
         semi: ['error', 'never'],
-        'space-before-function-paren': ['error', 'never'],
+        'comma-dangle': ['error', 'always-multiline']
     }
 };

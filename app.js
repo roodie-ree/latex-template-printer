@@ -18,5 +18,5 @@ createExpress({
 }).then(app => {
   const server = http.createServer(app)
 
-  server.listen(port, log.info(`Listening on port ${port}`))
+  server.listen(port, log.info(`Listening on http://localhost:${port}`))
 })

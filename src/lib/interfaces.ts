@@ -1,1 +1,1 @@
-export type SendFunction = (err: Error, data?: any) => void
+export type CallBackFunction = (err: Error, data?: any) => void

@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import { CallBackFunction } from './interfaces'
 
 export default class Template {
   name: string
@@ -12,7 +13,7 @@ export default class Template {
     this.path = path.join('..', '..', 'templates', name)
   }
 
-  get (callback: any) {
+  getContent (callback: CallBackFunction) {
     fs.readFile(this.path, (error, content) => {
       if (error) {
         return callback(error)
@@ -21,15 +22,15 @@ export default class Template {
     })
   }
 
-  set (callback: any) {
+  setContent (content: string, callback: CallBackFunction) {
 
   }
 
-  print (callback: any) {
+  print (callback: CallBackFunction) {
 
   }
 
-  delete (callback: any) {
+  delete (callback: CallBackFunction) {
 
   }
 }
